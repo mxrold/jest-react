@@ -1,12 +1,13 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import Footer from '../../components/Footer';
-import { describe } from 'yargs';
-import { expect } from '@jest/globals';
 
 describe('Test <Footer />', () => {
+    const footer = mount(<Footer />);
     test('Render del componente Footer', () => {
-        const footer = mount(<Footer />);
         expect(footer.length).toEqual(1);
+    });
+    test('Render del título', () => {
+        expect(footer.find(".Footer-title").text()).toEqual("Platzi Store");
     });
 });
