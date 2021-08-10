@@ -6,7 +6,7 @@ import '../styles/components/Header.styl';
 const Header = props => (
   <div className="Header">
     <h1 className="Header-title">
-      <Link to="/">
+      <Link to="/jest-react">
         Platzi Store
       </Link>
     </h1>
